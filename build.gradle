@@ -1,0 +1,51 @@
+group 'com.wijdemans'
+version '1.0.0'
+
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+    }
+}
+
+apply plugin: "java"
+apply plugin: "groovy"
+apply plugin: "maven"
+
+compileJava {
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+    options.verbose = false
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+ext {
+    versions = [:]
+    libraries = [:]
+}
+
+versions += [
+        slf4j: "1.7.18",
+]
+
+libraries.logging = [
+        "org.slf4j:log4j-over-slf4j:$versions.slf4j",
+        "org.slf4j:jcl-over-slf4j:$versions.slf4j",
+]
+
+dependencies {
+    compile libraries.logging
+
+    compile group: 'javax.ws.rs', name: 'javax.ws.rs-api', version: '2.0.1'
+
+    compile "com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:2.8.7"
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.8.7'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.8.7'
+
+}
