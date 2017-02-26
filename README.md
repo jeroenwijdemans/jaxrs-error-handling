@@ -1,5 +1,5 @@
 
-# Jetty Error handling
+# JAXRS Error handler
 
 provides simple error handling in JAXRS.
 
