@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * Body of errors message.
  * <p>
- * Body contains a list of errors that have occured.
+ * Body contains a list of errors that have occurred.
  */
 @JsonRootName(value = "errors")
 public class Errors {

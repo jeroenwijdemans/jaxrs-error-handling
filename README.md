@@ -8,12 +8,16 @@ _Work in progress_
 
 # JAXRS Error handler
 
-provides simple error handling in JAXRS.
-
-errors thrown by JAXRS are serialized to JSON but not in a nice format.
+Exceptions thrown by JAXRS are serialized to strings (JSON for example) but not 
+in a nice format.
 This library provides error mapping to a standardized Errors object or list.
 
-TODO add support for XML
+ - Defines fixed error classes 
+ - Provides simple runtime exception handling in JAXRS.
+
+Fixed classes makes sure that all applications use the same format across services.
+
+_TODO_ add support for XML
 
 # Dependencies
 
