@@ -28,7 +28,7 @@ Include dependency:
 
 ```
 dependencies {
-    compile "com.wijdemans:jaxrs-jetty-error-handling:1.0.0"
+    compile "com.wijdemans:jaxrs-jetty-error-handling:0.0.1"
 }
 ``` 
 
@@ -47,7 +47,8 @@ class Main {
     }  
         
 }
-
-
-
 ```
+
+# Changelog
+
+[See changelog](./CHANGELOG.md)
