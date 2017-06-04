@@ -13,8 +13,6 @@ buildscript {
 apply plugin: "java"
 apply plugin: "groovy"
 apply plugin: "maven"
-apply plugin: 'signing'
-apply plugin: "jacoco"
 
 compileJava {
     sourceCompatibility = "1.8"
@@ -52,6 +50,11 @@ dependencies {
 
     testCompile "org.spockframework:spock-core:1.0-groovy-2.4"
 }
+
+// --------------------------------------
+
+apply plugin: 'signing'
+apply plugin: "jacoco"
 
 task version {
     doFirst {

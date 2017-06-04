@@ -1,34 +1,29 @@
 language: java
 env:
   global:
-    # OSSRH_JIRA_USERNAME
-    # OSSRH_JIRA_PASSWORD
-    # GPG_KEY_NAME
-    # GPG_PASSPHRASE
+  - secure: pgwxi6qHxkZUuQuskRvHZ8cOnZpHrkNUCkn7bvlXFAwFpAH4ZYdXozxRgwWTEH8y8O/9yjPLU1AZh6VrPF/yN2orSw38ahisn8jtHUeoNH/CYk1fqJPBKSddXGiwjgTDjh3wEkA+agh5HSMXB9KlghIFJ6TkjGhJwForShxXKDFE9/cXh57Y28ULwwTQWW2XJFv58E9y4rwk2lnaAgtqGBzI3wrFBM6OoUmeg7bGIFTi4MWs8lzAHTCXcT504pbeNORHzTE+RwaKEqsfmu0ZcKH3aA4ANVrcYXgYWHL4xC+vDVapmFeiuYJOEDf3EwKX7kUdCyi5Q9lqbUqB9ZWVF6bzXJc4CAWWRbxFrT2CdTfvWoCCSAMXjezUc6fvpqvzlcySFziTrDDYpMcm7mFh+4I4nvKUWGm21uU9fAJtLlBJ+zRYsbTC6fdXAwT08zmKqzb+mId9A1Q2c28yGacGHFpaY56quF640e49W14Bvips/MefeuTIsKY+RBSyq96mZFNTFRStvwv41OQWcM/k6qlIqR5uWx4aERWT3TEjEy+oEXdlXSbYfDTmwUgRjuKXqH6ydOc+a48Ub4cozytP/WN/xaZpXreifEGuyMmTk/D0QFQpScPO3L7rZBMdpXoAoWY51b7rCrBKF20W/FCPYmu/6xDePT06WZzidT1E4YE=
+  - secure: rkank9/sndQEp41sU7bQydc7uiA5kuHnHg2p4epZh/l2YErwrzW4jmScxHFDo/OCowXXIak+srZvzbE3KgNdwHwHu2EamBHCidfqsPAgRreo5kAVhJxyMym71HE8HC0S4nZBzLrWBfc3RKa0APVv3hrPw8JBvlAPJQI22vDGbXrObqECmyZjuwAjbS319+9OHA6UGZ2iohFkJuMDZ1aa327rNaVR+OX6RoauH6CTiCRwsRlmAIJIOJCaK39mPMBN5PkOrwDSyvqJV96FNbZMpZCgfekDfGYvrMrPFzUxQHcqvfgZcZ143tFcFzw1wJW3nkOqvuDRWar2nwys8KnBveGXhXe065YEgyO6lk16XDztGFBHu44/zUYTa/sYxM/E6NLtCvoJErvxv564ao8pzl4MZJMttN+6xavogDKuX/o/WBhS/WiHMl3u05s3IfajmHKf45Ti5LjvDx4YZaVtDGQsQEuZCMG4eG33QAyijap4QQqHs1bDjpTbLIcxeZu4gyrC+1cYqEBvGH3jW0k0wY81iwnoWcqSyaj0Odf/lr/s6tA07e7zaCFFDZtPS8zcHUtK+6a6R1J1J2+cXXo4zn1+BP2TVTl1nW9FcUc7z+dqyjqlRm1dH2fWPZR/xhA4+WLGbFg7j2Hr8hQ0xTuOac2WzgloyCkm46pBw5ADu5E=
+  - secure: v1B+yJBPhSQHxKs0mHgnPbKSgNWCQoeI6xBd83y8hG0jxP8afPNCxZd10Xl6RG9sdilPrCblSPaWikJL4r8FK4wLVWksy/2cnSfNK8ChMEViy+cS+o4IMUSuiy0bXDfxfYoYEzYJzSHrQzYTjexCmniWLVU8fU0vpETqUQ6Irvx+/6AfWtFW1Zz/rQ6vMPqSWDGFlm2RPuUVyA5309dXtdanrJ8BVfocbQXN+OJrseaOKMUqfsNlU9NbyflZidcneaZ+6gXpndhUirfnIa9va1TyhiQ0iBgvFJG0qaPugu121ReH7oODMbS4kRUN7wpJaQFBdGSTTWggy8vcTPBJlxS4gvmXMlWpXuZaxIfxIqFHBacXcs3AOV+eAi2Fr68DDSgLH91oz0YjJ4VVMBqPm0US+yAodPtK0vqR1FmS5+4XO6LoOFeDRDiwxeDijPi9JfW9EImheVmvrXcDeV2aegIuKjZ8aU6aVtnd0l+WNcONhHNyDzbdqh1od4yiCFURqF6a8jVxfAJQs1mb1t2gOUpdvUrVIjv1NU1ubSBOIRzCnTvEyQecpTIHVeqVYMsBfAmLQ2J48lZIo/+3h13Lkd/rmkS4fxnIqMVS/GsgiYXscQRycXTvZMQAqjX9z0GRFAOV2J9TKga8DippzUz2XTyvyrLLU2pPi/2TwvSVmuA=
+  - secure: RzjnW+d6QPDbudHrvByfLSBETcMI1bi84Ox89enOFN85ifYRvLoHxEkP91sFwJ4wpWdT4zsKGwH+X2/Nc2sBDVrzG/PbyOFR/ksVJ1xAAnmdQwvh35ae20ohdq6YSwVHwlN3o8JoRFnJVTvaz6lQszVjxT9pfEmGeBlCcKGgvF6oqnkF3ZVit5vKbruTYV1cU9Ni7QN40DrfITU9oytTZwJ1ORbEsfrfsChB84gKoF+eaapC9ZVD05G6C9rGupE+IOTo++dUxitDjekfiHWuDskBNnAVkVB9ukTv+FyBLjXjQCViuBYYAuGRoR67t/5MBSK2H5THnwpmyU7VjxZtLRdFIksvst7fsk0XmKnzciVb3QUy0LYncwvI1+a3JEoJJYGeeQQOv5CCoiC8IlYTCDpwFMW9gPo/WZb3PbFbX5KcGkafL/P87QqMwdSca4mfNpA4iDsF8s6QQnSuUZ+Yr8YwF9qRdk42MmZVGhUqmvMqX4ymiIMMt+hwMT7ygR7EIFqlxtSgM1ODLbPw1u5QZPDAzhK4jFqSikb0GJk/zIWukYbUE8YPv7s+RFbxXHrn/7pB0C+eewqkeIOQHUan0l+E6s+SqUbriGsAkE4W9YaEugHVAUo0s4Yx7V11xWpxbp0jlNmYsDYNYmnNDzZqUBxYKAmUpv042ErVKIx1bs8=
 jdk:
-  - oraclejdk8
+- oraclejdk8
 before_script:
-  - chmod +x gradlew
+- chmod +x gradlew
 install: true
 script:
-  - ./gradlew test
+- "./gradlew clean test"
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+- bash <(curl -s https://codecov.io/bash)
 deploy:
-  - provider: script
-    script: ./cd/deploy.sh
-    on:
-      branch: master
-      tags: true
-  - provider: releases
-    api_key:
-      secure: "xxx"
-    file_glob: true
-    file:
-      - "build/libs/valueobjects-${VERSION}.jar"
-      - "build/libs/valueobjects-${VERSION}-javadoc.jar"
-      - "build/libs/valueobjects-${VERSION}-sources.jar"
-    skip_cleanup: true
-    on:
-      branch: master
-      tags: true
+- provider: script
+  script: "./cd/deploy.sh"
+  on:
+    branch: master
+    tags: true
+- provider: releases
+  api_key:
+    secure: C6B5553I8JddwoIj7E/LrPRAE0TiGwK0JFmiAGtoc4QYoA7eMwI66Dvg7HTunNJmzB58i9fv+Pl8IvfHNmqtYaxIcZ/r2unLEUa5OWXdALdPlOxhdIIDmA+g4wPyS2Hzc1zKcw8T6yR4Y3GG0ruUe4PuHmHQ6FkPqcHuYOADmgCnW5sgXd6mHBDMUALcF7zM0hyE0NYiZQoKD5pBmLuBMppNK3WW6D6lbq3PicVI1GRUDn3cU346Niu5O2KORols4QfgLQ9ef6DxCnlhKm6U0PTKb+Ywwgrpf8K3sl/jJM19D60egYxPAFkD7wt/v1qJIzp2QHGSfg7Daxc7AqDPCvbhgTSINXUN7YtXc5xRSEkxn3PJO/EOVinPu/ruVNaiASLxtaR6rUsZNgOhEKeQFtTsX7AfwHwpHNpi/zAsXkiZWsferRtO/4IRKprLHRU89vVbipm5SFboMHopxSYbVjr6Iz98HK5aDQR4YtNIwpVtdguKJ/SbmZTweNkex46DUixD6w5DCD9g1Z1ZyWoFhuBCPxsVPsf5IiTYBSlM/b/cyoGlr+Vir9DqRYGYIatDez2h8REwtErS2zg5+3FF+XOzsxNCpNqJDPVOR9tv4NdM7Lx8YvPFhFtJCieqVGjxZgLbn7eFDlN0ML0BNIRNUb2Q3uKT9ZXxVZ3jcquiwpM=
+  file_glob: true
+  file: build/libs/jaxrs-error-handling*
+  on:
+    repo: jeroenwijdemans/jaxrs-error-handling
