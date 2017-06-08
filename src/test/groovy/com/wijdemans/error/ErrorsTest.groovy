@@ -14,6 +14,6 @@ class ErrorsTest extends Specification {
         def s = o.writeValueAsString(e)
 
         then:
-        s == """{"errors":[{"code":100,"message":"wrong input, bad people","description":"wrong input, bad people"}]}"""
+        s == """{"errors":[{"code":100,"message":"wrong input, bad people","description":""}]}"""
     }
 }
