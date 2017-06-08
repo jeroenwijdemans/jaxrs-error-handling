@@ -30,7 +30,7 @@ public class Errors {
     }
 
     public Errors(Exception e) {
-        this.errors.add(new Error(e));
+        this.errors.add(Error.create(e));
     }
 
     public String asJson() {
@@ -39,5 +39,9 @@ public class Errors {
         } catch (JsonProcessingException e) {
             throw new RuntimeException("Error mapping errors to json.");
         }
+    }
+
+    public static Errors create(Error error) {
+        return new Errors(error);
     }
 }
