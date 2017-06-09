@@ -14,11 +14,6 @@ public class JaxRsErrorMapper implements ExceptionMapper<RuntimeException> {
 
     private static final Logger logger = LoggerFactory.getLogger(JaxRsErrorMapper.class);
 
-    private Response NOT_FOUND = Response.status(404)
-            .entity(Errors.create(Error.create(Error.UNKNOWN, "Page not found.")).asJson())
-            .encoding(MediaType.APPLICATION_JSON)
-            .build();
-
     @Override
     public Response toResponse(RuntimeException exception) {
         logger.debug("Caught exception of type [{}] - mapping it to user.", exception.getClass());
@@ -29,7 +24,12 @@ public class JaxRsErrorMapper implements ExceptionMapper<RuntimeException> {
                     .encoding(MediaType.APPLICATION_JSON)
                     .build();
         } else if (exception instanceof NotFoundException) {
-            return NOT_FOUND;
+            return Response.status(404)
+                    .entity(Errors.create(
+                            Error.create(Error.UNKNOWN, "Page not found.", exception.getMessage())
+                    ).asJson())
+                    .encoding(MediaType.APPLICATION_JSON)
+                    .build();
         }
         else if (exception instanceof ErrorsException) {
             return Response.status(500)
